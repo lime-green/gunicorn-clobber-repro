@@ -2,8 +2,8 @@ This is a reproduction of a socket clobber issue under gunicorn.
 
 Under certain conditions:
 - A request body of a sufficient size
-- A response body of a sufficient size
-- Not reading the requst body
+- A response body of a sufficient size (used a 100KB response body here)
+- Not reading the request body
 
 The socket seems to get destroyed. What's interesting is the behaviour
 is different when behind a reverse-proxy like nginx versus hitting gunicorn directly.
