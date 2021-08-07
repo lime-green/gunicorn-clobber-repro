@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+cd repro
 docker-compose build
 
 docker-compose up -d app nginx
