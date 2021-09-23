@@ -1,4 +1,4 @@
-This is a reproduction of a socket clobber issue under gunicorn.
+This is a reproduction of a socket clobber issue under gunicorn to illustrate the issue raised in https://github.com/benoitc/gunicorn/issues/2622
 
 Under certain conditions:
 - A request body of a sufficient size
